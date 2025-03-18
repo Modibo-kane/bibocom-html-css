@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="client.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+<!-------------------------------------------sidebar début -------------------------------------------------->
+        <input type="checkbox"id="check1">
+        <section class="gauche">
+            <div class="side-block"><h1>Gestion <br>Boutique</h1>
+            </div>
+            <div class="side-block">
+                <div class="side-ligne"><a href="acceuille.html"><i class="fa-solid fa-house"></i>Dashboard</a></div>
+                <div class="side-ligne"><a href="dette.html"><i class="fa-solid fa-dollar-sign"></i>Dette</a></div>
+                <div class="side-ligne"><a href="client.html"><i class="fa-solid fa-users"></i>Clients</a></div>
+                <div class="side-ligne"><a href="artcle.html"><i class="fa-solid fa-box"></i>Article</a></div>
+                <div class="side-ligne"><a href="#"><i class="fa-solid fa-envelope"></i>Demandes</a></div>
+                <div class="side-ligne"><a href="#"><i class="fa-solid fa-users-rays"></i>Utilisateurs</a></div>
+            </div>
+        </section>
+        <label for="check1" class="label-bars"><i class="fa-solid fa-bars fa-2xl"></i></label>
+<!-------------------------------------------sidebar fin -------------------------------------------------->
+
+
+
+<!-------------------------------------------corps principale début -------------------------------------------------->
+        <section class="droite">
+<!-------------------------------------------header début -------------------------------------------------->
+            <header>
+                <div class="header-block">
+                    <input type="text" placeholder="Rechecher ici">
+                </div>
+                <div class="header-block">
+                    <img src="9d465edc0a280aa3a89bd9519b5ef93e96232d3b_hq.gif" alt="">
+                </div>
+                <div class="header-block">
+                    Modibo <br> Kané
+                </div>
+            </header>
+<!-------------------------------------------header fin -------------------------------------------------->
+
+
+
+
+ <!-------------------------------------------corps  début -------------------------------------------------->
+            <div class="corps">
+                <legend>
+                    <h1>Liste Clients</h1>
+                    <a href="#popup">Nouveau Clients</a> 
+                </legend>
+                <br>
+                <div id="popup" class="overlay">
+                    <div class="popup">
+                        <div class="title">
+                            <h2><i class="fa-solid fa-user fa-xl"></i> Nouveau client </h2><a href="#"><i class="fa-solid fa-xmark fa-2xl"></i></a>
+                        </div> <br><br>
+                        <Form>
+                            <div class="field">
+                                <label for="prenom"><i class="fa-solid fa-user"></i>  Prénom</label>
+                                <input type="text" id="prenom">
+                            </div>
+    
+                            <div class="field">
+                                <label for="nom"><i class="fa-solid fa-user"></i> Nom</label>
+                                <input type="text" id="nom">
+                            </div>
+    
+                            <div class="field">
+                                <label for="téléphone"><i class="fa-solid fa-phone"></i> Téléphone</label>
+                                <input type="text" id="téléphone">
+                            </div>
+    
+                            <div class="field">
+                                <label for="localisation"><i class="fa-solid fa-location-dot"></i>  Adresse</label>
+                                <input type="text" id="localisation">
+                            </div>
+    
+                            <div class="field">
+                                <label for="photo"><i class="fa-solid fa-camera"></i> Photo</label>
+                                <input type="file" id="photo">
+                            </div>
+                        </Form>
+                        <div class="field2">
+                            <span>Créer un compte:</span>
+                        </div>
+                        
+                        <div class="field3">
+                            <input type="checkbox" name="" id="check">
+                            <label for="check" class="check"></label>
+                            <span class="span">Non</span>
+                            <span class="span2">Oui</span>
+                            <div class="none">
+                                <div class="field">
+                                    <label for="login"><i class="fa-solid fa-square-envelope"></i>  Login</label>
+                                    <input type="email" id="login">
+                                </div>
+        
+                                <div class="field ">
+                                    <label for="password"><i class="fa-solid fa-lock"></i>  Passoword</label>
+                                    <input type="password" id="password">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="submit">
+                                <button class="yellow">Enregistrer</button>
+                            </div>
+                        </a>
+                       
+                    </div>
+                </div>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Téléphone</th>
+                            <th>Adresse</th>
+                            <th>Montant dû</th>
+                            <th>Action</th>
+                            <th class="k"> <span style="color: transparent;"> Moi et </span>   </th>
+                        </tr>
+                        <tr>
+                            <td>Aminata</td>
+                            <td>785619115</td>
+                            <td>Thies,Senegal</td>
+                            <td>5000 FCFA</td>
+                            <td><a href="#">Détails</a></td>
+                            <td class="k"></td>
+                        </tr>
+                        <tr style="background-color: #fff;">
+                            <td>Oumar Diallo</td>
+                            <td>785619115</td>
+                            <td>Dakar,Senegal</td>
+                            <td>2000 FCFA</td>
+                            <td><a href="#">Détails</a></td>
+                            <td class="k"></td>
+                        </tr>
+                        <tr>
+                            <td>Julien</td>
+                            <td>785619115</td>
+                            <td>Saint-Louis,Senegal</td>
+                            <td>4000 FCFA</td>
+                            <td><a href="#">Détails</a></td>
+                            <td class="k"></td>
+                        </tr>
+                        <tr style="background-color: #fff;">
+                            <td>Seynabou Ndiaye</td>
+                            <td>785619115</td>
+                            <td>Kaolak,Senegal</td>
+                            <td>50000 FCFA</td>
+                            <td><a href="#">Détails</a></td>
+                            <td class="k"></td>
+                        </tr>
+                        
+                    </table>
+                    
+                </section>
+                <div class="suite">
+                    <div class="sens"><i class="fa-solid fa-chevron-up fa-rotate-270"></i></div>
+                    <div class="number"> 1</div>
+                    <div class="sens"><i class="fa-solid fa-chevron-up fa-rotate-90"></i></div>
+                </div>
+                <hr>
+            </div>
+
+<!-------------------------------------------corps fin -------------------------------------------------->
+        </section>
+ <!-------------------------------------------corps principale fin -------------------------------------------------->
+    </main>
+</body>
+</html>
