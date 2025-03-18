@@ -127,6 +127,10 @@ form{
     cursor: pointer;
 }
 
+.input button a{
+    width: 100%;
+}
+
 .input button:hover{
     box-shadow: inset 0px 0px 10px 0px rgb(43, 42, 42);
     border: solid black;
